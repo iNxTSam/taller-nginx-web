@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Samuel Prieto y Daniela Ramirez, estudiantes de Ingeniería de Software. Sitio estático desplegado con Nginx en Oracle Cloud.">
+  <meta name="author" content="Samuel Prieto y Daniela Ramirez">
+  <meta name="theme-color" content="#0b1120">
+  <title>Samuel Prieto y Daniela Ramirez | Portafolio</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    document.documentElement.classList.add("js");
+    try {
+      const savedTheme = localStorage.getItem("portfolio-theme");
+      if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+    } catch (error) {
+      document.documentElement.dataset.theme = "dark";
+    }
+  </script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">S&amp;D<span>.</span></a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a class="nav-link" href="#inicio">Inicio</a>
+        <a class="nav-link" href="#sobre-mi">Sobre nosotros</a>
+        <a class="nav-link" href="#proyectos">Proyectos</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button theme-toggle" id="theme-toggle" type="button" aria-label="Activar tema claro" aria-pressed="false">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="menu-button" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Ingeniería de Software · Uniempresarial</p>
+          <h1>Hola, somos <span class="gradient">Sam y Daniela</span>.<br>Construimos experiencias web.</h1>
+          <p class="lead">
+            Estudiantes de Ingeniería de Software en Bogotá. Nos interesa el desarrollo
+            frontend, la infraestructura en la nube y crear interfaces claras, rápidas
+            y accesibles para cualquier dispositivo.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#proyectos">Ver proyectos</a>
+            <a class="button button-ghost" href="#contacto">Hablemos</a>
+          </div>
+          <ul class="chips" aria-label="Tecnologías que uso">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Nginx</li>
+            <li>Oracle Cloud</li>
+          </ul>
+        </div>
+
+        <div class="hero-art reveal">
+          <img src="img/hero.svg" alt="Ilustración de una ventana de código con servicios en la nube" width="640" height="520">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Sobre nosotros</p>
+          <h2>Curiosidad, código y aprendizaje constante</h2>
+          <p class="section-lead">
+            Disfrutamos convertir ideas en productos funcionales: desde la estructura
+            semántica de una página hasta el despliegue del servidor que la publica.
+          </p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Somos <strong>Samuel Prieto</strong> y <strong>Daniela Ramirez</strong>,
+              estudiantes de Ingeniería de Software en Uniempresarial. Este portafolio
+              reúne nuestro trabajo conjunto en desarrollo web e infraestructura.
+            </p>
+            <p>
+              Actualmente cursamos la carrera y complementamos nuestra formación con
+              proyectos de desarrollo web. Trabajamos con HTML, CSS y JavaScript sin
+              frameworks, lo que nos permite entender a fondo cómo funciona el navegador.
+            </p>
+            <p>
+              También nos interesa la parte invisible del producto: configurar servidores
+              Linux, administrar Nginx, asegurar dominios y automatizar despliegues.
+            </p>
+            <ul class="check-list">
+              <li>Interfaces responsivas y accesibles.</li>
+              <li>Código limpio, semántico y mantenible.</li>
+              <li>Aprendizaje basado en proyectos reales.</li>
+            </ul>
+          </div>
+
+          <div class="skill-cards">
+            <article class="skill-card reveal">
+              <span class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 4l-4 16"></path>
+                </svg>
+              </span>
+              <h3>Frontend</h3>
+              <p>HTML semántico, CSS moderno con variables y diseño adaptable, JavaScript sin dependencias.</p>
+            </article>
+
+            <article class="skill-card reveal">
+              <span class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 19V9M10 19V5M16 19v-7M22 19H2"></path>
+                </svg>
+              </span>
+              <h3>Datos</h3>
+              <p>Análisis exploratorio, visualización y automatización con Python, pandas y SQL.</p>
+            </article>
+
+            <article class="skill-card reveal">
+              <span class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97A6 6 0 0 0 6.2 9.2 4.5 4.5 0 0 0 6.5 19z"></path>
+                  <path d="M12 12v7M9 15l3-3 3 3"></path>
+                </svg>
+              </span>
+              <h3>Cloud</h3>
+              <p>Servidores Linux, Nginx, DNS y despliegues en Oracle Cloud Infrastructure.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="proyectos">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Proyectos</p>
+          <h2>Trabajos seleccionados</h2>
+          <p class="section-lead">Filtra por categoría y abre una tarjeta para ver más detalles.</p>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filtrar proyectos por categoría">
+          <button class="filter is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="filter" type="button" data-filter="web" aria-pressed="false">Web</button>
+          <button class="filter" type="button" data-filter="datos" aria-pressed="false">Datos</button>
+          <button class="filter" type="button" data-filter="cloud" aria-pressed="false">Cloud</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <article class="project-card reveal" data-category="datos" data-project="analitica">
+            <button class="project-open" type="button" aria-label="Ver detalles del proyecto Panel de analítica">
+              <img src="img/proyecto-1.svg" alt="Vista previa de un panel de analítica con gráficos" width="800" height="500" loading="lazy">
+              <div class="project-body">
+                <span class="tag">Datos</span>
+                <h3>Panel de analítica</h3>
+                <p>Dashboard para explorar ventas por categoría con gráficos interactivos.</p>
+                <span class="project-more">Ver detalle
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+                </span>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" data-category="web" data-project="reservas">
+            <button class="project-open" type="button" aria-label="Ver detalles del proyecto Landing de reservas">
+              <img src="img/proyecto-2.svg" alt="Vista previa de una landing page de reservas" width="800" height="500" loading="lazy">
+              <div class="project-body">
+                <span class="tag">Web</span>
+                <h3>Landing de reservas</h3>
+                <p>Página adaptable con formulario validado y confirmación inmediata.</p>
+                <span class="project-more">Ver detalle
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+                </span>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" data-category="cloud" data-project="despliegue">
+            <button class="project-open" type="button" aria-label="Ver detalles del proyecto Despliegue en la nube">
+              <img src="img/proyecto-3.svg" alt="Vista previa de un servidor conectado a servicios en la nube" width="800" height="500" loading="lazy">
+              <div class="project-body">
+                <span class="tag">Cloud</span>
+                <h3>Despliegue en la nube</h3>
+                <p>Sitio estático publicado con Nginx y un subdominio de DuckDNS.</p>
+                <span class="project-more">Ver detalle
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+                </span>
+              </div>
+            </button>
+          </article>
+        </div>
+
+        <p class="empty-state" id="empty-state" hidden>No hay proyectos en esta categoría.</p>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contacto</p>
+          <h2>¿Construimos algo juntos?</h2>
+          <p class="section-lead">
+            Este formulario demuestra la validación en el navegador. Escribe un mensaje
+            y comprueba cómo se verifican los campos antes de enviarlo.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Bogotá, Colombia
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"></path><path d="m4 7 8 5 8-5"></path></svg>
+              Formulario demostrativo sin envío de correos
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" type="text" autocomplete="name" minlength="2" required placeholder="Tu nombre">
+            <p class="error" data-error-for="name"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="tucorreo@ejemplo.com">
+            <p class="error" data-error-for="email"></p>
+          </div>
+
+          <div class="field">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" minlength="10" required placeholder="Cuéntame sobre tu idea..."></textarea>
+            <p class="error" data-error-for="message"></p>
+          </div>
+
+          <button class="button button-primary" type="submit">Enviar mensaje</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Samuel Prieto y Daniela Ramirez. Desplegado con Nginx en Oracle Cloud.</p>
+      <a href="#inicio">Volver arriba</a>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Cerrar detalles">×</button>
+      <img id="modal-image" src="" alt="" width="800" height="500">
+      <span class="tag" id="modal-tag"></span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+      <ul class="modal-list" id="modal-list"></ul>
+    </div>
+  </dialog>
+</body>
+</html>

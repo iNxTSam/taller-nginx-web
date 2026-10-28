@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111c35"/>
+      <stop offset="1" stop-color="#080d19"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="photo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e2c4d"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="120" cy="90" r="120" fill="#6366f1" opacity="0.18" filter="url(#glow)"/>
+  <circle cx="690" cy="410" r="130" fill="#22d3ee" opacity="0.12" filter="url(#glow)"/>
+
+  <rect x="54" y="46" width="520" height="408" rx="20" fill="#0d1628" stroke="#2a3a5e" stroke-width="1.5"/>
+  <path d="M54 92h520" stroke="#2a3a5e" stroke-width="1.5"/>
+  <circle cx="80" cy="69" r="5" fill="#fb7185"/>
+  <circle cx="98" cy="69" r="5" fill="#fbbf24"/>
+  <circle cx="116" cy="69" r="5" fill="#34d399"/>
+  <rect x="240" y="62" width="150" height="14" rx="7" fill="#1b2944"/>
+
+  <rect x="80" y="116" width="74" height="8" rx="4" fill="#22d3ee"/>
+  <rect x="80" y="150" width="270" height="20" rx="8" fill="#eef2ff"/>
+  <rect x="80" y="180" width="220" height="20" rx="8" fill="#eef2ff"/>
+  <rect x="80" y="218" width="300" height="8" rx="4" fill="#475b82"/>
+  <rect x="80" y="234" width="260" height="8" rx="4" fill="#475b82"/>
+  <rect x="80" y="250" width="190" height="8" rx="4" fill="#475b82"/>
+  <rect x="80" y="284" width="120" height="36" rx="10" fill="url(#accent)"/>
+  <rect x="214" y="284" width="120" height="36" rx="10" fill="#17233d" stroke="#2e3f61"/>
+
+  <rect x="80" y="348" width="210" height="80" rx="12" fill="url(#photo)" stroke="#2a3a5e"/>
+  <circle cx="118" cy="382" r="14" fill="#22d3ee" opacity="0.35"/>
+  <path d="M96 414c8-16 22-25 40-25s32 9 40 25" fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
+  <rect x="176" y="368" width="86" height="7" rx="3.5" fill="#6b7fa6"/>
+  <rect x="176" y="384" width="62" height="6" rx="3" fill="#2e3f61"/>
+  <rect x="176" y="400" width="72" height="6" rx="3" fill="#2e3f61"/>
+
+  <rect x="306" y="348" width="240" height="80" rx="12" fill="#111d35" stroke="#22304d"/>
+  <rect x="326" y="368" width="70" height="7" rx="3.5" fill="#6b7fa6"/>
+  <rect x="326" y="386" width="200" height="6" rx="3" fill="#2e3f61"/>
+  <rect x="326" y="400" width="160" height="6" rx="3" fill="#2e3f61"/>
+  <circle cx="512" cy="392" r="11" fill="#34d399" opacity="0.16"/>
+  <path d="m507 392 3.5 3.5 6-6.5" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="596" y="80" width="164" height="330" rx="26" fill="#0d1628" stroke="#2a3a5e" stroke-width="1.5"/>
+  <rect x="638" y="94" width="80" height="8" rx="4" fill="#1b2944"/>
+  <rect x="612" y="124" width="132" height="86" rx="12" fill="url(#photo)" stroke="#2a3a5e"/>
+  <circle cx="678" cy="160" r="17" fill="url(#accent)"/>
+  <rect x="612" y="226" width="132" height="9" rx="4.5" fill="#eef2ff"/>
+  <rect x="612" y="244" width="94" height="7" rx="3.5" fill="#475b82"/>
+  <rect x="612" y="268" width="132" height="30" rx="8" fill="#17233d" stroke="#2e3f61"/>
+  <rect x="624" y="278" width="54" height="7" rx="3.5" fill="#475b82"/>
+  <rect x="612" y="308" width="132" height="30" rx="8" fill="#17233d" stroke="#2e3f61"/>
+  <rect x="624" y="318" width="66" height="7" rx="3.5" fill="#475b82"/>
+  <rect x="612" y="348" width="132" height="34" rx="9" fill="url(#accent)"/>
+  <rect x="642" y="361" width="72" height="7" rx="3.5" fill="#ffffff" opacity="0.9"/>
+  <rect x="660" y="392" width="36" height="5" rx="2.5" fill="#2e3f61"/>
+
+  <g>
+    <rect x="470" y="38" width="118" height="38" rx="12" fill="#111d35" stroke="#2a3a5e"/>
+    <circle cx="490" cy="57" r="5" fill="#34d399"/>
+    <text x="504" y="62" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#c7d2fe">Reserva lista</text>
+  </g>
+</svg>

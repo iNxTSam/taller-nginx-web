@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111c35"/>
+      <stop offset="1" stop-color="#080d19"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="rack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17233d"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="650" cy="120" r="140" fill="#6366f1" opacity="0.17" filter="url(#glow)"/>
+  <circle cx="120" cy="420" r="120" fill="#22d3ee" opacity="0.1" filter="url(#glow)"/>
+
+  <g>
+    <rect x="90" y="190" width="170" height="220" rx="18" fill="url(#rack)" stroke="#2a3a5e" stroke-width="1.5"/>
+    <rect x="108" y="210" width="134" height="42" rx="8" fill="#101a2e" stroke="#24304d"/>
+    <circle cx="124" cy="231" r="4" fill="#34d399"/>
+    <rect x="138" y="227" width="52" height="7" rx="3.5" fill="#475b82"/>
+    <rect x="108" y="264" width="134" height="42" rx="8" fill="#101a2e" stroke="#24304d"/>
+    <circle cx="124" cy="285" r="4" fill="#34d399"/>
+    <rect x="138" y="281" width="66" height="7" rx="3.5" fill="#475b82"/>
+    <rect x="108" y="318" width="134" height="42" rx="8" fill="#101a2e" stroke="#24304d"/>
+    <circle cx="124" cy="339" r="4" fill="#fbbf24"/>
+    <rect x="138" y="335" width="44" height="7" rx="3.5" fill="#475b82"/>
+    <rect x="108" y="372" width="134" height="22" rx="7" fill="#0d1628"/>
+    <circle cx="122" cy="383" r="3.5" fill="#22d3ee"/>
+    <circle cx="137" cy="383" r="3.5" fill="#22d3ee" opacity="0.6"/>
+    <circle cx="152" cy="383" r="3.5" fill="#22d3ee" opacity="0.3"/>
+  </g>
+
+  <g>
+    <path d="M260 300h70" stroke="#22d3ee" stroke-width="2.5" stroke-dasharray="7 7" stroke-linecap="round"/>
+    <path d="M330 300c40 0 40-90 80-90" stroke="#22d3ee" stroke-width="2.5" stroke-dasharray="7 7" fill="none" stroke-linecap="round"/>
+    <path d="M330 300c40 0 40 90 80 90" stroke="#6366f1" stroke-width="2.5" stroke-dasharray="7 7" fill="none" stroke-linecap="round"/>
+    <circle cx="330" cy="300" r="5" fill="#22d3ee"/>
+  </g>
+
+  <g>
+    <path d="M472 168a34 34 0 0 1 6.2-67.2A44 44 0 0 1 559 112.6 30.5 30.5 0 0 1 550 173z" fill="#111d35" stroke="#6366f1" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M490 184h64" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+    <text x="501" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="800" fill="#c7d2fe">WEB</text>
+  </g>
+
+  <g>
+    <rect x="480" y="230" width="230" height="84" rx="14" fill="#111d35" stroke="#2a3a5e" stroke-width="1.5"/>
+    <rect x="500" y="248" width="58" height="7" rx="3.5" fill="#6b7fa6"/>
+    <text x="500" y="288" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#eef2ff">Nginx</text>
+    <circle cx="674" cy="262" r="5" fill="#34d399"/>
+    <text x="686" y="267" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#34d399">activo</text>
+    <rect x="500" y="298" width="120" height="5" rx="2.5" fill="#2e3f61"/>
+  </g>
+
+  <g>
+    <rect x="480" y="338" width="230" height="84" rx="14" fill="#111d35" stroke="#2a3a5e" stroke-width="1.5"/>
+    <rect x="500" y="356" width="70" height="7" rx="3.5" fill="#6b7fa6"/>
+    <text x="500" y="396" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#eef2ff">DuckDNS</text>
+    <circle cx="674" cy="370" r="5" fill="#22d3ee"/>
+    <text x="686" y="375" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#22d3ee">HTTP</text>
+    <rect x="500" y="406" width="150" height="5" rx="2.5" fill="#2e3f61"/>
+  </g>
+
+  <g>
+    <rect x="330" y="130" width="118" height="40" rx="12" fill="#111d35" stroke="#2a3a5e"/>
+    <text x="346" y="155" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#c7d2fe">Puerto 80</text>
+    <rect x="330" y="424" width="150" height="40" rx="12" fill="#111d35" stroke="#2a3a5e"/>
+    <text x="346" y="449" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#c7d2fe">IP pública</text>
+  </g>
+
+  <path d="M260 130h60" stroke="#22d3ee" stroke-width="2.5" stroke-dasharray="7 7" stroke-linecap="round"/>
+  <path d="M260 450h60" stroke="#6366f1" stroke-width="2.5" stroke-dasharray="7 7" stroke-linecap="round"/>
+</svg>
