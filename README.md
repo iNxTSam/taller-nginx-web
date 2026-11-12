@@ -12,11 +12,13 @@
 | IP pública | `157.137.210.124` |
 | Usuario SSH | `opc` |
 | Subdominio | `sam-daniela.duckdns.org` |
-| URL del sitio | `http://sam-daniela.duckdns.org` |
+| URL del sitio | Demo no disponible (instancia detenida) |
 | Repositorio | `https://github.com/iNxTSam/taller-nginx-web` |
 | Guía en GitHub | `https://github.com/iNxTSam/taller-nginx-web/blob/main/README.md` |
 
-> **Entrega:** este documento es la guía del taller. El sitio está disponible en `http://sam-daniela.duckdns.org` y el repositorio es público.
+> **Estado:** la instancia de OCI se detuvo después de la entrega, por lo que `sam-daniela.duckdns.org` ya no responde. La guía, el código y las capturas siguen disponibles en este repositorio.
+
+> **Entrega:** este documento es la guía del taller. El sitio se publicó en `http://sam-daniela.duckdns.org` durante la entrega; la instancia se detuvo después y el repositorio sigue público.
 
 ## Contenido
 
@@ -455,7 +457,7 @@ Resolve-DnsName sam-daniela.duckdns.org
 - [x] Diseño adaptable a móvil y funcionalidades JavaScript verificadas.
 - [x] Repositorio público con la guía y las capturas visibles.
 - [x] Enlaces de la guía y del subdominio verificados.
-- [x] Instancia y repositorio disponibles para la verificación del docente.
+- [x] Repositorio disponible; la instancia se detuvo después de la entrega.
 
 ## Cómo personalizar el sitio
 
@@ -467,5 +469,5 @@ Resolve-DnsName sam-daniela.duckdns.org
 ---
 
 **Autores:** Samuel Enrique Prieto Lozano y Daniela Ramirez  
-**Sitio publicado:** `http://sam-daniela.duckdns.org`  
+**Sitio publicado durante la entrega (instancia detenida):** `http://sam-daniela.duckdns.org`  
 **Guía:** `https://github.com/iNxTSam/taller-nginx-web/blob/main/README.md`
